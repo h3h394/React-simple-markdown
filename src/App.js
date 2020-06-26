@@ -35,6 +35,9 @@ const styles = css`
     width: 100%;
     max-width: 1400px;
     display: flex;
+    a{
+      color: red;
+    }
     textarea,
     .output {
       width: 100%;
