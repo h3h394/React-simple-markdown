@@ -10,10 +10,7 @@ const App = () => {
     <div className="App" css={styles}>
       <h1>Markdown</h1>
       <div className="markdownContainer">
-        <textarea
-          autoFocus
-          onChange={(e) => setValue(e.target.value)}
-        ></textarea>
+        <textarea onChange={(e) => setValue(e.target.value)}></textarea>
         <ReactMarkdown className="output" source={value} escapeHtml={false} />
       </div>
     </div>
@@ -28,8 +25,8 @@ const styles = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #fff;
   h1 {
-    color: #fff;
     font-size: 40px;
     line-height: 1;
     margin-bottom: 18px;
